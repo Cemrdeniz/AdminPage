@@ -1,0 +1,108 @@
+.loginContainer {
+  min-height: 93vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: radial-gradient(circle at top, rgba(108, 43, 247, 0.25), transparent 32%),
+              linear-gradient(180deg, #090a12 0%, #111423 100%);
+  color: #f4f5fb;
+}
+
+.loginForm {
+  background: rgba(13, 17, 34, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  padding: 44px 36px;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+
+.headerBlock {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.badge {
+  display: inline-flex;
+  margin-bottom: 14px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(89, 37, 220, 0.18);
+  color: #c9b6ff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.title {
+  text-align: center;
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: -0.04em;
+  color: #f8f9ff;
+}
+
+.subtitle {
+  margin-top: 12px;
+  font-size: 0.98rem;
+  color: #b9bed8;
+  line-height: 1.6;
+}
+
+.inputGroup {
+  margin-bottom: 22px;
+}
+
+.loginForm input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: #edf0ff;
+  border-radius: 12px;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.loginForm input:focus {
+  outline: none;
+  border-color: #5925dc;
+}
+
+.errorInput {
+  border-color: #e74c3c !important;
+}
+
+.errorText {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.loginBtn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #7c55ff 0%, #4a1fb8 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.loginBtn:hover:not(:disabled) {
+  background-color: #4a1fb8;
+}
+
+.loginBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.footerText{
+  margin-top: 25px;
+}

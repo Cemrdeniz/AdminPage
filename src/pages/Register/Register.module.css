@@ -1,0 +1,132 @@
+.registerContainer {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 24px;
+  background: radial-gradient(circle at top, rgba(30, 47, 105, 0.18), transparent 28%),
+              linear-gradient(180deg, #07111f 0%, #141f34 100%);
+  color: #f4f5fb;
+}
+
+.registerForm {
+  background: rgba(10, 16, 32, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(20px);
+  padding: 44px 32px;
+  border-radius: 32px;
+  width: 100%;
+  max-width: 420px;
+  max-height: calc(100vh - 48px);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.45);
+}
+
+.registerHeader {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  margin: 0 0 12px;
+  font-size: 2.1rem;
+  letter-spacing: -0.04em;
+  color: #f7f8ff;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 1rem;
+  color: #bfc7e1;
+  line-height: 1.6;
+}
+
+.inputGroup {
+  margin-bottom: 18px;
+}
+
+.registerForm input {
+  width: 97%;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: #edf0ff;
+  border-radius: 14px;
+  font-size: 15px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.registerForm input::placeholder {
+  color: #98a2c0;
+}
+
+.registerForm input:focus {
+  outline: none;
+  border-color: #6f5fff;
+  box-shadow: 0 0 0 4px rgba(111, 95, 255, 0.12);
+}
+
+.errorInput {
+  border-color: #ef5a60 !important;
+}
+
+.errorText {
+  color: #ff9aa2;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.serverError {
+  margin-bottom: 22px;
+  padding: 14px 16px;
+  background: rgba(239, 90, 96, 0.12);
+  border: 1px solid rgba(239, 90, 96, 0.25);
+  border-radius: 16px;
+  color: #ffd7da;
+  font-size: 0.95rem;
+}
+
+.registerBtn {
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(135deg, #5d5eff 0%, #3c2df5 100%);
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.registerBtn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  opacity: 0.98;
+}
+
+.registerBtn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.footerText {
+  margin-top: 24px;
+  text-align: center;
+  color: #a5b0cd;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.registerForm p,
+.serverError p {
+  text-align: center;
+}
+
+.registerLink {
+  color: #d5c8ff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.registerLink:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}

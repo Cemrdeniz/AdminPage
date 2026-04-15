@@ -1,0 +1,46 @@
+.layoutWrapper {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: #f3f5fb;
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.pageOutlet {
+  padding: 16px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  z-index: 40;
+}
+
+@media (min-width: 768px) {
+  .pageOutlet {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .sidebarOpen .mainContent {
+    margin-left: 280px;
+  }
+
+  .pageOutlet {
+    padding: 40px;
+  }
+
+  .overlay {
+    display: none;
+  }
+}
