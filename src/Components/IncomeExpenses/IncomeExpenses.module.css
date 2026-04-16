@@ -1,0 +1,66 @@
+.tableContainer {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 22px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+}
+
+.title {
+  margin: 0 0 18px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  min-width: 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 0;
+}
+
+th,
+td {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+th {
+  background: #f8fafc;
+  color: #475569;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+tbody tr {
+  border-bottom: 1px solid #eff2f7;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+tbody td {
+  color: #334155;
+}
+
+tbody tr:nth-child(even) {
+  background: #fbfbff;
+}
+
+.income {
+  color: #16a34a;
+  font-weight: 700;
+}
+
+.expense {
+  color: #dc2626;
+  font-weight: 700;
+}
