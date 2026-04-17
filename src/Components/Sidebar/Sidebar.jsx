@@ -51,12 +51,10 @@ const Sidebar = ({ open, onClose }) => {
         ))}
       </nav>
 
-      <div className={styles.sidebarFooter}>
-        <button type="button" className={styles.logoutBtn} onClick={handleLogout}>
-          <img src="/sign-out-alt.svg" alt="Logout" className={styles.logoutIcon} />
-          Logout
-        </button>
-      </div>
+      <button type="button" className={styles.logoutBtn} onClick={handleLogout}>
+        <img src="/sign-out-alt.svg" alt="Logout" className={styles.logoutIcon} />
+        Logout
+      </button>
     </aside>
   );
 };
