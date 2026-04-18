@@ -1,0 +1,123 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* =====================
+   DESKTOP (1280+)
+===================== */
+.statsWrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+/* =====================
+   TABLET (767 - 1280)
+===================== */
+@media (max-width: 1280px) {
+  .statsWrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =====================
+   MOBILE (420 - 767)
+===================== */
+@media (max-width: 767px) {
+  .statsWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =====================
+   CARDS
+===================== */
+.statCard {
+  background: #fff;
+  border-radius: 24px;
+  padding: 24px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+  min-height: 140px;
+}
+
+.statCard h3 {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.count {
+  margin-top: 14px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #3730a3;
+}
+
+/* =====================
+   CHART CARD (FIXED)
+===================== */
+.chartCard {
+  background: #fff;
+  border-radius: 24px;
+  padding: 20px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+
+  /* 🔥 CRITICAL FIX */
+  overflow: hidden;
+}
+
+.chartCard h4 {
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+/* wrapper FIX */
+.chartInner {
+  flex: 1;
+  position: relative;
+  min-height: 0;
+}
+
+/* canvas FIX */
+.chartInner canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+/* MOBILE HEIGHT */
+@media (max-width: 767px) {
+  .chartCard {
+    height: 260px;
+  }
+}
+
+/* TABLET HEIGHT */
+@media (max-width: 1280px) {
+  .chartCard {
+    height: 300px;
+  }
+}
