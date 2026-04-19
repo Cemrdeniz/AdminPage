@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
-import Sidebar from '../../components/Sidebar/Sidebar';
-import Header from '../../components/Header/Header';
+import Sidebar from '../../Components/Sidebar/Sidebar';
+import Header from '../../Components/Header/Header';
 import styles from './SharedLayout.module.css';
 
 const SharedLayout = () => {

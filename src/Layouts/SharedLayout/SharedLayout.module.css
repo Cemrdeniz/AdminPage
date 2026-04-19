@@ -3,6 +3,8 @@
   min-height: 100vh;
   width: 100%;
   background: #f3f5fb;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .mainContent {
@@ -10,12 +12,14 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  min-width: 0;
 }
 
 .pageOutlet {
   padding: 16px;
   flex: 1;
   overflow-y: auto;
+  min-width: 0;
 }
 
 .overlay {
@@ -34,6 +38,7 @@
 @media (min-width: 1280px) {
   .sidebarOpen .mainContent {
     margin-left: 280px;
+    width: calc(100% - 280px);
   }
 
   .pageOutlet {
